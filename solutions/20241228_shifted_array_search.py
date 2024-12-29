@@ -1,3 +1,8 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
+
+
 '''
 Problem Description:
 You are given an array of n unique integers that is sorted in ascending order. However, the array has been circularly shifted (all elements are rotated to the right or to the left) an unknown number of times. Your task is to find whether the target element is present in the array or not. If it is present return the index of that element otherwise return -1.
