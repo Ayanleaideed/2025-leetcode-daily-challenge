@@ -1,3 +1,7 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
+
 '''
 Problem Description:
 The problem is asking to find all unique substrings that are exactly of length 'k' from the given string 's'. Here, "Unique" means no characters inside the substring are repeated. If there is no possible unique 'k'-length substring, return an empty list.
