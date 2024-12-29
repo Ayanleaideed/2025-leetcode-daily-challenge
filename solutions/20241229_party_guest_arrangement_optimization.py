@@ -1,3 +1,8 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
+
+
 '''
 Problem Description:
 The problem statement is an example of a graph-coloring problem where we want to color nodes (guests) with 2 colors such that no pair of connected nodes (pattern of dislikes) have the same color. If a proper coloring is possible, it will represent the valid seating arrangement. If not, it suggests controversy between attendees rendering any arrangement impossible.
