@@ -1,9 +1,7 @@
-Sure, here is a detailed and complete solution with the required inclusions:
 
-Problem Description (LeetCode problem 1):
 
 "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order."
-
+'''
 Constraints:
 - 2 <= nums.length <= 10^3
 - -10^9 <= nums[i] <= 10^9
@@ -20,7 +18,7 @@ Space Complexity: O(n), where n is the number of elements in the nums list. In w
 
 Let's implement this in code now.
 
-```python
+'''
 def twoSum(nums, target):
     """
     :type nums: List[int]
@@ -36,11 +34,10 @@ def twoSum(nums, target):
 
     # if no solution found, return empty array (shouldn't happen according to problem constraints)
     return []
-```
-Example test cases: 
 
-```python
+#Example test cases: 
+
+
 print(twoSum([2,7,11,15], 9))  # Output: [0, 1]
 print(twoSum([3,2,4], 6))  # Output: [1, 2]
 print(twoSum([3,3], 6))  # Output: [0, 1]
-```
