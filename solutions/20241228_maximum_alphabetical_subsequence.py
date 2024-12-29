@@ -1,3 +1,7 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
+'''
 Problem Description:
 Given a string 's', we need to find the longest subsequence so that all characters of the subsequence are sorted in alphabetical order. A subsequence does not need to be contiguous, and there can be multiple correct answers but we need to return one which longest.
 
@@ -13,8 +17,8 @@ Then, we go through the DP table to find the maximum length (i.e., the length of
 Complexity Analysis:
 - Time: O(N^2)
 - Space: O(N)
+'''
 
-```python
 def max_alpha_subsequence(s: str) -> str:
     """
     Given a string s, find the longest alphabetical subsequence.
@@ -37,5 +41,6 @@ def max_alpha_subsequence(s: str) -> str:
             result.append(s[i])
             maxlen -= 1
     return ''.join(result[::-1])
-```
+'''
 This solution function returns the longest alphabetical subsequence in the given string 's'. Two dynamic programming tables (dp, used to keep tab of the longest subsequence ending at each index, and result, used to build the longest sequence) are built first. The longest alphabetical subsequences are extracted from the dp and result tables. These subsequences are then joined to form the final result which is returned by the function.
+'''
