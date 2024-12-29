@@ -1,3 +1,7 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
+
 '''
 Problem Description:
 In this problem, we are given an array of integers 'items' which represents the size of each item and two integer values 'limit1' and 'limit2' which represent the carrying capacity of two sacks. Our task is to determine the maximum number of items we can fit into the sacks without exceeding their carrying limits. 
