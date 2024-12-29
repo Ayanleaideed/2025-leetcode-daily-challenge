@@ -1,3 +1,7 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
+
 '''
 Problem Description:
 We have an array of characters consisting of lowercase letters, uppercase letters, and special (non-alphanumeric) characters. The task is to segregate the characters in such a way that all lowercase letters come first, followed by uppercase letters and then the special characters. The order of characters within each group does not matter.
