@@ -1,4 +1,6 @@
-Here's a Python solution using the sort function with a custom comparison function:
+#Author: Ayanle 
+#Data: Datetime.now()
+
 
 '''
 Problem Description:
