@@ -1,3 +1,7 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
+
 '''
 Problem Description:
 The problem requires us to verify if it is safe to put a digit in a given cell of a Sudoku game. It is safe if the digit does not occur in the same row, column, or 3x3 sub-grid on the current board.
