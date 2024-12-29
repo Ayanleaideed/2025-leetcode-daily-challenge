@@ -1,3 +1,6 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
 '''
 Problem Description:
 Given a 2D integer matrix, where each value represents a pixel color. We are required to write a function that outputs a binary 2D matrix as an edge map of the given matrix. An edge in the image is defined as a boundary between two different pixel colors.
