@@ -1,3 +1,7 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
+
 '''
 Problem Description:
 We are given an integer 'x'. If 'x' is divisible by the sum of its digits, it is considered to be a Harshad number. Our task is to return the sum of the digits of 'x' if 'x' is a Harshad number, otherwise, return -1.
