@@ -1,3 +1,6 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
 '''
 Problem Description:
 The task is to write an algorithm that returns the maximum number of repetitions of a unique character in a given string, composed of English lowercase and uppercase characters. If multiple characters have the same maximum number of repetitions, the character to be returned would be the one that comes first alphabetically with lowercase being given precedence over uppercase.
