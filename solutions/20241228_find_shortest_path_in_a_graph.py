@@ -1,40 +1,43 @@
 '''
-Problem Description and Constraints: 
+Problem:
+In a given undirected and weighted graph, I have to find the shortest path from a specific starting point to every other vertex in the graph.
 
-Given a graph, we have to find the shortest path from a particular starting point to all other nodes in graph.
+Approach:
+This problem can be solved using Dijkstra's algorithm. We initialize the distance to the starting vertex as 0 and to all other vertices as infinity. Then, for each unvisited vertex, we select the vertex with the least distance and update the distances to its neighbors. The procedure is repeated until all the vertices are visited.
 
-Solution Approach:
-
-We use Dijkstra's algorithm for finding the shortest path from one node to another in a graph. We first initialize
-the distances to all nodes as infinity except for the starting point. We initialize the distance of the starting point
-to 0. Then we start traversing the graph. For every visited node, we check all its adjacent nodes. We update the distance 
-of the adjacent node, if the previous distance of the node is greater than the sum of distance of current node and weight 
-of edge connecting the current node and the adjacent node.
-
-Time Complexity: O(V^2) - Because for every vertex, we are looking at all other vertices.
-Space Complexity: O(V) - As we keep track of distance for all vertices.
-
-Example Usage: find_shortest_path(graph, 0)
-
-where graph is a 2D list representing adjacency matrix and 0 is the starting point.
+Complexity:
+- Time: O(V + ElogE)
+- Space: O(V)
 '''
 
-def find_shortest_path(graph, start):
-    N = len(graph)
-    visited = [False]*N
-    distance = [float('inf')]*N
-    distance[start] = 0
-    
-    for _ in range(N-1):
-        min_distance = float('inf')
-        for i in range(N):
-            if not visited[i] and distance[i] < min_distance:
-                min_distance = distance[i]
-                next_node = i
-        visited[next_node] = True
-        for i in range(N):
-            if (not visited[i] and graph[next_node][i]
-                and distance[next_node] + graph[next_node][i] < distance[i]):
-                distance[i] = distance[next_node] + graph[next_node][i]
-                
-    return distance
+import heapq
+
+def shortest_path(graph, start):
+    # The heap data structure (priority queue) to keep track of
+    # vertices with the least distance
+    heap_data = [(0, start)]
+    # A dictionary to maintain the shortest distance to all vertices
+    least_distances = {vertex: float('infinity') for vertex in graph}
+    least_distances[start] = 0
+    # A dictionary to maintain the parent node of each vertex
+    parent = {start: None}
+
+    while heap_data:
+        (dist, curr_vertex) = heapq.heappop(heap_data)
+
+        # Proceed further only if the popped vertex isn't processed
+        if dist != least_distances[curr_vertex]:
+            continue
+
+        for neighbor, weight in graph[curr_vertex].items():
+            old_distance = least_distances[curr_vertex]
+            new_distance = old_distance + weight
+
+            # If the new distance is less than the current least, update it
+            if new_distance < least_distances[neighbor]:
+                least_distances[neighbor] = new_distance
+                heapq.heappush(heap_data, (new_distance, neighbor))
+                parent[neighbor] = curr_vertex
+
+    # Return the shortest distances and the path to all vertices
+    return least_distances, parent
