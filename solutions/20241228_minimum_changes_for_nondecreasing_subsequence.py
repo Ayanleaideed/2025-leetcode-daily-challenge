@@ -1,3 +1,7 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
+
 '''
 Problem Description:
 The problem asks to find the minimum number of changes required to get a non-decreasing subsequence of size k from an array list (nums).
