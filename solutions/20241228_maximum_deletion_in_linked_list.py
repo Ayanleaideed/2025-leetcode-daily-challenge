@@ -1,3 +1,7 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
+
 '''
 Problem Description:
 Given a singly linked list, we need to design an algorithm that will remove all instances of a specific integer (x) from the list. The result will be the head of the altered linked list.
