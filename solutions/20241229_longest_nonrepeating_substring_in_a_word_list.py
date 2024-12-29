@@ -1,3 +1,8 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
+
+
 '''
 Problem Description:
 We are given an array of strings, i.e. the list of words. The task is to find the longest word from this list such that it contains non-repeating characters. If there are multiple such words, return the one that appears first in the list.
