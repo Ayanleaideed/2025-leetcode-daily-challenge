@@ -1,3 +1,8 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
+
+
 '''
 Problem Description:
 The problem is to sort an array into a 'Peak Pattern', in which the highest element in the array is at the middle, and the elements decrease symmetrically towards the ends. The condition is that the array should have a unique maximum and an odd number of elements (to have the symmetric decrease on both sides). If it is not possible to form the Peak Pattern, return -1.
