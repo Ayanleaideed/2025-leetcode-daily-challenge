@@ -1,3 +1,7 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
+
 '''
 Problem Description:
 The problem is asking to find the sum of elements of the subarrays which are multiples of the input k from the integer array `arr`.
