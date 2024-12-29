@@ -1,3 +1,6 @@
+#Author: Ayanle 
+#Data: Datetime.now()
+
 '''
 Problem Description:
 We are to determine a number at a certain position in a Fibonacci-like sequence, given the first two numbers, 'm' and 'n', and the position 'k'. Unlike the common Fibonacci sequence which starts with 0 and 1, this one starts with 'm' and 'n'.
