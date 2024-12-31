@@ -1,3 +1,6 @@
+#Author: Ayanle A 
+#Date: 12/31/2024
+
 '''
 Problem Description:
 The problem is to determine the minimum possible absolute difference between the sums of the strength levels of the winning and losing players. We are given an array of integers representing the strength of each player. Three important constraints are that all strength values are unique and the total number of players and their strength sums are even.

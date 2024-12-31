@@ -1,3 +1,6 @@
+# Author: Ayanle 
+# Date: 12/31/2024
+
 '''
 Problem Description:
 Given a non-empty 2D grid containing three types of values (empty cells, coins and walls represented by 0, 1 and -1 respectively) and a starting point, we need to determine the maximum number of coins that can be collected by moving right and down, without moving into walls or outside the grid.
