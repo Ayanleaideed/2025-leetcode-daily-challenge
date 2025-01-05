@@ -1,3 +1,8 @@
+#Author: Ayanle A
+#Date: datetime.now()
+
+
+
 '''
 Problem Description:
 The problem requires calculating the minimum migration time for a bird from the top-left corner of a NxN grid to the bottom-right cell. The bird can only move right or down from any given cell and has to rest exactly once in one of the provided rest cells.
