@@ -1,3 +1,7 @@
+# Ayanle A
+# Date: 01/04/2025
+
+
 '''
 Problem Description:
 Given an array of integers, the task is to find the pair of integers that occur with the highest frequency. If there are multiple such pairs, all such pairs should be returned. The array equally consists of at least 2 different integers and the length of input array could be up to 500.
