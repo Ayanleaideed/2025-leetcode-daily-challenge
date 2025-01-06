@@ -1,5 +1,5 @@
 #Author: Ayanle 
-#Data: Datetime.now()
+#Data: {today}
 
 
 '''
